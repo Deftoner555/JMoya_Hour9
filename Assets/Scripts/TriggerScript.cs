@@ -7,8 +7,12 @@ public class TriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name + " has entered the cube");
-        //if
+
+        //Debug.Log(other.gameObject.name + " has entered the cube");
+        //if (Collision.gameObject.name == "L Trigger")
+        {
+            //Debug.Log(other.gameObject.name + " has entered L Trigger");
+        }
     }
 
     private void OnTriggerStay(Collider other)
