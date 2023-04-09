@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class BounceCounter : MonoBehaviour
 {
-
-    void Update()
+    int Bcount = 0;
+    void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "Platform")
+        {
+            Bcount++;
+            Debug.Log("Bounce count: " + Bcount);
+        }
     }
 }
