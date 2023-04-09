@@ -6,11 +6,6 @@ public class MotionScript : MonoBehaviour
 {
     private float speed = .05f;
 
-    private void OnTriggerExit(Collider other)
-    {
-        Debug.Log(other.gameObject.name + " has left the cube");
-    }
-
     void Update()
     {
         float mY = Input.GetAxis("Vertical") * speed;
